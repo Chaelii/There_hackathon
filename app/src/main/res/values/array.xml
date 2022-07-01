@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="select_sort_array">
+        <item>본문</item>
+        <item>제목</item>
+        <item>소제목</item>
+    </string-array>
+
+    <string-array name="select_pont_array">
+        <item>맑은 고딕</item>
+        <item>굴림</item>
+        <item>궁서체</item>
+        <item>나늠명조</item>
+        <item>돋움</item>
+    </string-array>
+
+    <string-array name="select_size_array">
+        <item>8</item>
+        <item>10</item>
+        <item>12</item>
+        <item>15</item>
+        <item>18</item>
+    </string-array>
+
+</resources>

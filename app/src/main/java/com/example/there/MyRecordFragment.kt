@@ -35,6 +35,10 @@ class MyRecordFragment :Fragment() {
             (context as MainActivity).supportFragmentManager.beginTransaction().replace(R.id.main_frm, MyProfileFragment()).commitAllowingStateLoss()
         }
 
+        binding.btnMyrecordAddIv.setOnClickListener {
+            (context as MainActivity).supportFragmentManager.beginTransaction().replace(R.id.main_frm, AddRecordFragment()).commitAllowingStateLoss()
+        }
+
         return binding.root
     }
 }

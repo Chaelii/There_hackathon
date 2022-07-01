@@ -18,7 +18,7 @@ class MyProfileFragment : Fragment(){
     ): View? {
         binding = FragmentMyprofileBinding.inflate(inflater, container, false)
         binding.btnMyprofileRecord.setOnClickListener {
-            (context as MainActivity).supportFragmentManager.beginTransaction().replace(R.id.main_frm, MyRecordFragment()).commitAllowingStateLoss()
+            (context as MainActivity).supportFragmentManager.beginTransaction().replace(R.id.main_frm, AddRecordFragment()).commitAllowingStateLoss()
         }
         return binding.root
     }
