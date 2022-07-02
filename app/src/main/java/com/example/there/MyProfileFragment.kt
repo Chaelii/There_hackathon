@@ -20,6 +20,11 @@ class MyProfileFragment : Fragment(){
         binding.btnMyprofileRecord.setOnClickListener {
             (context as MainActivity).supportFragmentManager.beginTransaction().replace(R.id.main_frm, AddRecordFragment()).commitAllowingStateLoss()
         }
+
+        binding.postMyprofileGl.setOnClickListener {
+            (context as MainActivity).supportFragmentManager.beginTransaction().replace(R.id.main_frm, MyRecordFragment()).commitAllowingStateLoss()
+        }
+
         return binding.root
     }
 
