@@ -20,6 +20,45 @@ class MyProfileFragment : Fragment(){
         binding.btnMyprofileRecord.setOnClickListener {
             (context as MainActivity).supportFragmentManager.beginTransaction().replace(R.id.main_frm, MyRecordFragment()).commitAllowingStateLoss()
         }
+        binding.ibtnMyprofileMyrecord1.setOnClickListener {
+            (context as MainActivity).supportFragmentManager.beginTransaction().replace(R.id.main_frm, MyRecordFragment()).commitAllowingStateLoss()
+        }
+        binding.ibtnMyprofileMyrecord2.setOnClickListener {
+            (context as MainActivity).supportFragmentManager.beginTransaction().replace(R.id.main_frm, MyRecordFragment()).commitAllowingStateLoss()
+        }
+        binding.ibtnMyprofileMyrecord3.setOnClickListener {
+            (context as MainActivity).supportFragmentManager.beginTransaction().replace(R.id.main_frm, MyRecordFragment()).commitAllowingStateLoss()
+        }
+        binding.ibtnMyprofileMyrecord4.setOnClickListener {
+            (context as MainActivity).supportFragmentManager.beginTransaction().replace(R.id.main_frm, MyRecordFragment()).commitAllowingStateLoss()
+        }
+        binding.ibtnMyprofileMyrecord5.setOnClickListener {
+            (context as MainActivity).supportFragmentManager.beginTransaction().replace(R.id.main_frm, MyRecordFragment()).commitAllowingStateLoss()
+        }
+        binding.ibtnMyprofileMyrecord6.setOnClickListener {
+            (context as MainActivity).supportFragmentManager.beginTransaction().replace(R.id.main_frm, MyRecordFragment()).commitAllowingStateLoss()
+        }
+        binding.ibtnMyprofileMyrecord7.setOnClickListener {
+            (context as MainActivity).supportFragmentManager.beginTransaction().replace(R.id.main_frm, MyRecordFragment()).commitAllowingStateLoss()
+        }
+        binding.ibtnMyprofileMyrecord8.setOnClickListener {
+            (context as MainActivity).supportFragmentManager.beginTransaction().replace(R.id.main_frm, MyRecordFragment()).commitAllowingStateLoss()
+        }
+        binding.ibtnMyprofileMyrecord9.setOnClickListener {
+            (context as MainActivity).supportFragmentManager.beginTransaction().replace(R.id.main_frm, MyRecordFragment()).commitAllowingStateLoss()
+        }
+        binding.ibtnMyprofileMyrecord10.setOnClickListener {
+            (context as MainActivity).supportFragmentManager.beginTransaction().replace(R.id.main_frm, MyRecordFragment()).commitAllowingStateLoss()
+        }
+        binding.ibtnMyprofileMyrecord11.setOnClickListener {
+            (context as MainActivity).supportFragmentManager.beginTransaction().replace(R.id.main_frm, MyRecordFragment()).commitAllowingStateLoss()
+        }
+        binding.ibtnMyprofileMyrecord12.setOnClickListener {
+            (context as MainActivity).supportFragmentManager.beginTransaction().replace(R.id.main_frm, MyRecordFragment()).commitAllowingStateLoss()
+        }
+        binding.ibtnMyprofileMyrecord13.setOnClickListener {
+            (context as MainActivity).supportFragmentManager.beginTransaction().replace(R.id.main_frm, MyRecordFragment()).commitAllowingStateLoss()
+        }
         return binding.root
     }
 
