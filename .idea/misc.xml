@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+
         <entry key="..\:/Users/jieun/AndroidStudioProjects/There_android/app/src/main/res/layout/activity_main.xml" value="0.16666666666666666" />
         <entry key="..\:/Users/jieun/AndroidStudioProjects/There_android/app/src/main/res/layout/fragment_addrecord.xml" value="0.35520833333333335" />
         <entry key="..\:/Users/jieun/AndroidStudioProjects/There_android/app/src/main/res/layout/fragment_chatting.xml" value="0.13994439295644115" />
@@ -14,10 +15,15 @@
         <entry key="..\:/Users/jieun/AndroidStudioProjects/There_android/app/src/main/res/layout/fragment_search.xml" value="0.13994439295644115" />
         <entry key="..\:/Users/jieun/AndroidStudioProjects/There_android/app/src/main/res/menu/bottoem_nav_menu.xml" value="0.13994439295644115" />
         <entry key="..\:/Users/jieun/AndroidStudioProjects/There_android/app/src/main/res/menu/bottom_nav_menu.xml" value="0.29157759726378796" />
+
         <entry key="..\:/android-sdk/AndroidStudioProjects/There/app/src/main/res/drawable/btn_myprofile.xml" value="0.1735" />
         <entry key="..\:/android-sdk/AndroidStudioProjects/There/app/src/main/res/drawable/btn_myprofile_border.xml" value="0.1695" />
         <entry key="..\:/android-sdk/AndroidStudioProjects/There/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1705" />
-        <entry key="..\:/android-sdk/AndroidStudioProjects/There/app/src/main/res/layout/fragment_myprofile.xml" value="0.129115006412997" />
+        <entry key="..\:/android-sdk/AndroidStudioProjects/There/app/src/main/res/drawable/searchbar_border.xml" value="0.1655" />
+        <entry key="..\:/android-sdk/AndroidStudioProjects/There/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/android-sdk/AndroidStudioProjects/There/app/src/main/res/layout/fragment_myprofile.xml" value="0.25" />
+        <entry key="..\:/android-sdk/AndroidStudioProjects/There/app/src/main/res/layout/fragment_myrecord.xml" value="0.129115006412997" />
+        <entry key="..\:/android-sdk/AndroidStudioProjects/There/app/src/main/res/layout/fragment_search.xml" value="0.12569474134245404" />
       </map>
     </option>
   </component>
