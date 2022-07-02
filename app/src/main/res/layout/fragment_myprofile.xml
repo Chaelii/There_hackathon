@@ -119,6 +119,7 @@
         android:layout_weight="1">
 
         <GridLayout
+            android:id="@+id/post_myprofile_gl"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:columnCount="3">
@@ -182,8 +183,11 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
-        android:background="@drawable/btn_myprofile_border"
-        android:text="기록하기" />
+
+        android:layout_marginBottom="15dp"
+        android:text="기록하기"
+        android:background="@drawable/btn_myprofile_border"/>
+
 
 </LinearLayout>
 

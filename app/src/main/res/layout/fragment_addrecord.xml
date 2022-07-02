@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/btn_addrecord_backarrow_iv"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:src="@drawable/btn_addrecord_backarrow"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="29dp"/>
+
+    <TextView
+        android:id="@+id/text_upload_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="등록"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toTopOf="@id/btn_addrecord_backarrow_iv"
+        app:layout_constraintBottom_toBottomOf="@id/btn_addrecord_backarrow_iv"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="10dp"/>
+
+    <ImageView
+        android:id="@+id/img_picture_iv"
+        android:layout_width="40dp"
+        android:layout_height="35dp"
+        android:src="@drawable/img_addrecord_picture"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_addrecord_backarrow_iv"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="5dp"/>
+
+    <ImageView
+        android:id="@+id/img_video_iv"
+        android:layout_width="40dp"
+        android:layout_height="35dp"
+        android:src="@drawable/img_addrecord_camera"
+        app:layout_constraintStart_toEndOf="@id/img_picture_iv"
+        app:layout_constraintTop_toBottomOf="@id/btn_addrecord_backarrow_iv"
+        android:layout_marginTop="5dp"/>
+
+
+    <LinearLayout
+        android:id="@+id/select_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/img_picture_iv">
+
+        <Spinner
+            android:entries="@array/select_sort_array"
+            android:id="@+id/select_sort_spn"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:orientation="vertical"
+            android:layout_marginStart="10dp"/>
+
+        <Spinner
+            android:id="@+id/select_pont_spn"
+            android:entries="@array/select_pont_array"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:orientation="vertical"
+            android:layout_marginStart="10dp"/>
+
+        <Spinner
+            android:id="@+id/select_size_spn"
+            android:entries="@array/select_size_array"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:orientation="vertical"
+            android:layout_marginStart="10dp"/>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/title_et"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:hint="제목 입력"
+        android:padding="10dp"
+        android:background="@drawable/rounded_edittext"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/select_ll"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="5dp"/>
+
+    <EditText
+        android:id="@+id/hashtag_et"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:hint="태그 입력"
+        android:padding="10dp"
+        android:background="@drawable/rounded_edittext"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/title_et"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="5dp"/>
+
+    <EditText
+        android:id="@+id/content_et"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:hint="본문 입력"
+        android:padding="10dp"
+        android:background="@drawable/rounded_edittext"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/hashtag_et"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
