@@ -1,16 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginHorizontal="20dp"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <TextView
-        android:layout_width="wrap_content"
+    <SearchView
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="검색창"
-        android:textSize="30sp"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:background="@drawable/searchbar_border"
+        android:layout_marginTop="35dp"
+        android:layout_marginBottom="15dp"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="3">
+            <ImageButton android:src="@drawable/img_myprofile_record" />
+            <ImageButton android:src="@drawable/img_myprofile_record"/>
+            <ImageButton android:src="@drawable/img_myprofile_record"/>
+            <ImageButton android:src="@drawable/img_myprofile_record"/>
+            <ImageButton android:src="@drawable/img_myprofile_record"/>
+            <ImageButton android:src="@drawable/img_myprofile_record"/>
+            <ImageButton android:src="@drawable/img_myprofile_record"/>
+            <ImageButton android:src="@drawable/img_myprofile_record"/>
+            <ImageButton android:src="@drawable/img_myprofile_record"/>
+            <ImageButton android:src="@drawable/img_myprofile_record"/>
+            <ImageButton android:src="@drawable/img_myprofile_record"/>
+            <ImageButton android:src="@drawable/img_myprofile_record"/>
+            <ImageButton android:src="@drawable/img_myprofile_record"/>
+            <ImageButton android:src="@drawable/img_myprofile_record"/>
+            <ImageButton android:src="@drawable/img_myprofile_record"/>
+            <ImageButton android:src="@drawable/img_myprofile_record"/>
+            <ImageButton android:src="@drawable/img_myprofile_record"/>
+            <ImageButton android:src="@drawable/img_myprofile_record"/>
+            <ImageButton android:src="@drawable/img_myprofile_record"/>
+            <ImageButton android:src="@drawable/img_myprofile_record"/>
+            <ImageButton android:src="@drawable/img_myprofile_record"/>
+            <ImageButton android:src="@drawable/img_myprofile_record"/>
+
+        </GridLayout>
+    </ScrollView>
+</LinearLayout>
