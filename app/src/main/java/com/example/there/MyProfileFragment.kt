@@ -21,7 +21,7 @@ class MyProfileFragment : Fragment(){
             (context as MainActivity).supportFragmentManager.beginTransaction().replace(R.id.main_frm, AddRecordFragment()).commitAllowingStateLoss()
         }
 
-        binding.postMyprofileGl.setOnClickListener {
+        binding.ibtnMyprofileMyrecord1.setOnClickListener {
             (context as MainActivity).supportFragmentManager.beginTransaction().replace(R.id.main_frm, MyRecordFragment()).commitAllowingStateLoss()
         }
 
