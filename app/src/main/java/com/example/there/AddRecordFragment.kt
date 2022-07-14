@@ -25,4 +25,14 @@ class AddRecordFragment: Fragment() {
 
         return binding.root
     }
+
+    private fun getContent(){
+        val title : String = binding.titleEt.text.toString()
+        val hashtag : String = binding.hashtagEt.text.toString()
+        val content : String = binding.contentEt.text.toString()
+
+        return
+    }
+
+
 }
