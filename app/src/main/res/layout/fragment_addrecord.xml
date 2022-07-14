@@ -16,15 +16,15 @@
 
     <TextView
         android:id="@+id/text_upload_tv"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="38dp"
+        android:layout_height="25dp"
+        android:layout_marginEnd="10dp"
         android:text="등록"
-        android:textSize="20sp"
         android:textColor="@color/black"
-        app:layout_constraintTop_toTopOf="@id/btn_addrecord_backarrow_iv"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="@id/btn_addrecord_backarrow_iv"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginEnd="10dp"/>
+        app:layout_constraintTop_toTopOf="@id/btn_addrecord_backarrow_iv" />
 
     <ImageView
         android:id="@+id/img_picture_iv"

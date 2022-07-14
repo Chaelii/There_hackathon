@@ -4,12 +4,11 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.AdapterView
-import android.widget.ArrayAdapter
+import android.widget.Toast
 import androidx.fragment.app.Fragment
 import com.example.there.databinding.FragmentAddrecordBinding
 
-class AddRecordFragment: Fragment() {
+class AddRecordFragment: Fragment() , AddRecordView{
     lateinit var binding : FragmentAddrecordBinding
 
     override fun onCreateView(
@@ -23,16 +22,31 @@ class AddRecordFragment: Fragment() {
             (context as MainActivity).supportFragmentManager.beginTransaction().replace(R.id.main_frm, MyProfileFragment()).commitAllowingStateLoss()
         }
 
+        binding.textUploadTv.setOnClickListener {
+            addRecord()
+        }
+
         return binding.root
     }
 
-    private fun getContent(){
-        val title : String = binding.titleEt.text.toString()
-        val hashtag : String = binding.hashtagEt.text.toString()
+    private fun getContent(): RecordRequest {
         val content : String = binding.contentEt.text.toString()
 
-        return
+        return RecordRequest(0, content, "")
+    }
+
+    private fun addRecord(){
+        val addService = AddRecordService()
+        addService.setAddRecordView(this)
+        addService.addRecord(getContent())
     }
 
 
+    override fun onAddRecordSuccess() {
+        Toast.makeText(context, "success", Toast.LENGTH_SHORT).show()
+    }
+
+    override fun onAddRecordFailure() {
+        TODO("Not yet implemented")
+    }
 }
