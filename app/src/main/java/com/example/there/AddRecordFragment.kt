@@ -24,6 +24,8 @@ class AddRecordFragment: Fragment() , AddRecordView{
 
         binding.textUploadTv.setOnClickListener {
             addRecord()
+            (context as MainActivity).supportFragmentManager.beginTransaction().replace(R.id.main_frm, MyProfileFragment()).commitAllowingStateLoss()
+            Toast.makeText(context, "등록 버튼을 눌렀습니다.", Toast.LENGTH_SHORT).show()
         }
 
         return binding.root

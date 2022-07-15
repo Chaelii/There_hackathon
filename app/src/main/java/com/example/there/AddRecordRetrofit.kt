@@ -5,7 +5,7 @@ import retrofit2.converter.gson.GsonConverterFactory
 
 object AddRecordRetrofit {
     //통신할 서버 url
-    private const val BASE_URL = ""
+    private const val BASE_URL = "http://localhost:8080"
 
     //Retrofit 객체 초기화
     val retrofit = Retrofit.Builder()

@@ -12,7 +12,7 @@ class AddRecordService {
     }
 
     fun addRecord(request: RecordRequest){
-        val addService = getRetrofit().create(RecordInterface::class.java)
+        val addService = AddRecordRetrofit.add
 
         addService.postRecord(request).enqueue(object : retrofit2.Callback<RecordResponse> {
             override fun onResponse(call: Call<RecordResponse>, response: Response<RecordResponse>){
@@ -30,4 +30,5 @@ class AddRecordService {
         })
         Log.d("ADD", "ADD WELL")
     }
+
 }
