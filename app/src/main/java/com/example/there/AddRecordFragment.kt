@@ -24,8 +24,7 @@ class AddRecordFragment: Fragment() , AddRecordView{
 
         binding.textUploadTv.setOnClickListener {
             addRecord()
-            (context as MainActivity).supportFragmentManager.beginTransaction().replace(R.id.main_frm, MyProfileFragment()).commitAllowingStateLoss()
-            Toast.makeText(context, "등록 버튼을 눌렀습니다.", Toast.LENGTH_SHORT).show()
+            //(context as MainActivity).supportFragmentManager.beginTransaction().replace(R.id.main_frm, MyProfileFragment()).commitAllowingStateLoss()
         }
 
         return binding.root
@@ -33,8 +32,7 @@ class AddRecordFragment: Fragment() , AddRecordView{
 
     private fun getContent(): RecordRequest {
         val content : String = binding.contentEt.text.toString()
-
-        return RecordRequest(0, content, "")
+        return RecordRequest(1, content, "image")
     }
 
     private fun addRecord(){
@@ -44,11 +42,11 @@ class AddRecordFragment: Fragment() , AddRecordView{
     }
 
 
-    override fun onAddRecordSuccess() {
-        Toast.makeText(context, "success", Toast.LENGTH_SHORT).show()
+    override fun onAddRecordSuccess(code: Int, message: String) {
+        Toast.makeText(this.context, "성공", Toast.LENGTH_SHORT).show()
     }
 
     override fun onAddRecordFailure() {
-        TODO("Not yet implemented")
+        Toast.makeText(this.context, "실패", Toast.LENGTH_SHORT).show()
     }
 }

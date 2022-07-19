@@ -1,6 +1,6 @@
 package com.example.there
 
 interface AddRecordView {
-    fun onAddRecordSuccess()
+    fun onAddRecordSuccess(code : Int, message: String)
     fun onAddRecordFailure()
 }
